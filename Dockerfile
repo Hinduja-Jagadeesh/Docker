@@ -1,2 +1,2 @@
-FROM ubuntu7234656345egvhgufsdjfj52
+FROM ubuntu
 CMD ["echo", "Hello World
