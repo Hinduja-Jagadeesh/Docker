@@ -22,6 +22,8 @@ pipeline {
 									sh "${tool("mysonar ")}/bin/sonar-scanner -Dsonar.projectKey=sonar-pro -Dsonar.projectName=sonar-pro"
 								}
 							}
+							}
+							}
 				stage('Qualitygate'){
 						steps{
 							script{
@@ -35,7 +37,7 @@ pipeline {
 				}
 						
 
-}}
+
 
 }
 
