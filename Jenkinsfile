@@ -15,13 +15,16 @@ pipeline {
                 }
         }
                 stage('sonaranalysis'){
-                        steps{
-							script{
-								def scannerHome = tool 'mysonar';
-								withSonarQubeEnv('mysonar'){
-									sh "${tool("mysonar ")}/bin/sonar-scanner -Dsonar.projectKey=sonar-pro -Dsonar.projectName=sonar-pro"
+						 environment {
+							scannerHome = tool 'mysonar'
 								}
-							}
+                        steps{
+							
+								
+								withSonarQubeEnv('mysonar'){
+									sh "${scannerHome}/bin/sonar-scanner -Dsonar.projectKey=sonar-pro -Dsonar.projectName=sonar-pro"
+								}
+							
 							}
 							}
 				stage('Qualitygate'){
