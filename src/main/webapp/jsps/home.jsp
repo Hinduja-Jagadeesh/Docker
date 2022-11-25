@@ -10,7 +10,7 @@
 </head>
 <body>
 <h1>Welcome to Mithun Software Solutions. Bengaluru,Karnataka </h1>
-<h1> Mithun Software Solutions- Very Good Training center for DevOps with AWS in Maratha Halli Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h1>
+<h2> Mithun Software Solutions- Very Good Training center for DevOps with AWS in Maratha Halli Bangalore India and also for Job Assitance Job Support also...Teaching Real Time scnerios</h2>
 <hr>
 <br>
 	<h1><h3> Server Side IP Address </h3><br>
@@ -47,8 +47,7 @@ out.println("Server Host Name :: "+inetAddress.getHostName());
 	<p> Service : <a href="services/employee/getEmployeeDetails">Get Employee Details </p>
 <hr>
 <hr>
-<p>Mithun Technologies - Consultant, Training, Development Center.</p>
-<p><small>Copyrights 2022 by <a href="http://mithuntechnologies.com/">Mithun Technologies,Bengaluru</a> </small></p>
+<p>Mithun Technologies - Consultant, Training, Development Center.<small>Copyrights 2022 by <a href="http://mithuntechnologies.com/">Mithun Technologies,Bengaluru</a> </small></p>
 
 </body>
 </html>
