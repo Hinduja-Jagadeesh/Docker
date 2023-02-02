@@ -8,6 +8,10 @@ pipeline {
 			steps{
 				echo 'test build'
 			}
+			post{
+				echo 'archiving...'
+				archiveArtifacts artifacts: '**/*.war'
+			}
 		}
 	}
 }
