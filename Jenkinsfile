@@ -9,10 +9,10 @@ pipeline{
 		/*jdk "OracleJDK8" */
 	}
 	environment{
-		SNAP_REPO = 'vprofile-snapshot'
-		RELEASE_REPO = 'vprofile-release'
-		CENTRAL_REPO = 'vpro-maven-central'
-		NEXUS_GRP_REPO = 'vpro-maven-group'
+		SNAP-REPO = 'vprofile-snapshot'
+		RELEASE-REPO = 'vprofile-release'
+		CENTRAL-REPO = 'vpro-maven-central'
+		NEXUS-GRP-REPO = 'vpro-maven-group'
 		NEXUS-USER = 'admin'
 		NEXUS-PASS = 'admin'
 		NEXUSIP = '172.31.16.125'
@@ -69,7 +69,7 @@ pipeline{
 					nexusUrl: "${NEXUSIP}:${NEXUSPORT}",
 					groupId: QA,
 					version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-					repository: "${RELEASE_REPO}",
+					repository: "${RELEASE-REPO}",
 					credentialsId: "${NEXUSLOGIN}",
 					artifacts: [
 						[artifactId: 'vproapp',
