@@ -1,9 +1,12 @@
 pipeline {
 	agent any
+	tools{
+		maven "maven"
+	}
 	stages{
 		stage('Build'){
 			steps{
-				sh 'mvn -s settings.xml -Dskiptests install'
+				echo 'test build'
 			}
 		}
 	}
