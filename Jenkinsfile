@@ -16,7 +16,7 @@ pipeline{
 		
 		NEXUSIP = '172.31.16.125'
 		NEXUSPORT = '8081'
-		NEXUSLOGIN = 'nexuslogin' #name given creds for nexus#
+		NEXUSLOGIN = 'nexuslogin' 
 		SONARSERVER = 'sonar'
 		SONARSCANNER = 'sonar'
 	}
@@ -28,14 +28,13 @@ pipeline{
 			post{
 				success{
 					echo 'Now Archiving...'
-					archiveArtifacts artifacts: '**/*.war' #archiveArtifacts#
+					archiveArtifacts artifacts: '**/*.war'
 				}
 			}
 		}
 		stage('Test'){
 			steps{
-				sh 'mvn -s settings.xml test' #we have to give settings.xml wherever we are using maven, or else it wll download depedency for maven instead of nexus repo#
-			}
+				sh 'mvn -s settings.xml test' 			}
 		}
 		stage('Sonar Analysis'){
 			environment{
