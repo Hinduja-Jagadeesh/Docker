@@ -23,7 +23,7 @@ pipeline{
 		stage('Build'){
 			steps{
 				script{
-					def response = httpRequest 'http://34.229.124.123:8081/repository/vpro-maven-central'
+					def response = httpRequest 'http://34.229.124.123:8081/repository/vpro-maven-central/'
 				        println("Status: "+response.status)
 
 				}
