@@ -9,9 +9,12 @@ pipeline {
 				echo 'test build'
 			}
 			post{
-				echo 'archiving...'
-				archiveArtifacts artifacts: '**/*.war'
+				success{
+					echo 'archiving...'
+					archiveArtifacts artifacts: '**/*.war'
+				}
 			}
+
 		}
 	}
 }
