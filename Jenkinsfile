@@ -15,7 +15,7 @@ pipeline{
 		NEXUS_GRP_REPO = 'vpro-maven-group'
 		NEXUS_USER = 'admin'
 		NEXUS_PASS = 'admin'
-		NEXUSIP = '172.31.16.125'
+		NEXUSIP = '34.229.124.123'
 		NEXUSPORT = '8081'
 		NEXUSLOGIN = 'nexuslogin' 
 		SONARSERVER = 'sonar'
