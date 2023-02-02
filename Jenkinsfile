@@ -22,11 +22,7 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
-				script{
-					def response = httpRequest 'http://34.229.124.123:8081/'
-				        println("Status: "+response.status)
-
-				}
+				
 				sh 'mvn  -s settings.xml -DskipTests install'
 			}
 			post{
