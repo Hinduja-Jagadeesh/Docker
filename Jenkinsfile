@@ -22,6 +22,7 @@ pipeline{
 	stages{
 		stage('Build'){
 			steps{
+				sh 'ping http://34.229.124.123:8081/repository/vpro-maven-central/'
 				sh 'mvn  -s settings.xml -DskipTests install'
 			}
 			post{
