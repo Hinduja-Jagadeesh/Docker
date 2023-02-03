@@ -46,7 +46,7 @@ pipeline{
 					-Dsonar.projectName=vprofile-app \
 					-Dsonar.projectVersion=1.0 \
 					-Dsonar.sources=src/				
-					-Dsonar.java.binaries=target/test-classes/com/etc/ 
+					-Dsonar.java.binaries=target/test-classes/DevOPS/devOPS/ 
 					-Dsonar.junit.reportsPath=target/surefire-reports/ 
 					-Dsonar.jacoco.reportsPath=target/jacoco.exec '''				}
 					
